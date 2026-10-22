@@ -5,7 +5,7 @@ merci-site/
 ├── index.html   ← ページの見た目（レイアウト・色）。ふだん触りません
 ├── content.js   ← ★ 文章・ニュース・料金・写真の指定はすべてここ
 ├── images/      ← ロゴ・写真
-├── CNAME        ← 独自ドメイン名（merci-mille-fois.com）
+├── CNAME        ← 独自ドメイン名（merci-flower.net）
 ├── .nojekyll    ← GitHub用のおまじない（空ファイル）
 └── README.md    ← この手引き
 ```
@@ -50,6 +50,9 @@ GitHub 上なら：リポジトリで `content.js` をクリック → 右上の
 
 ---
 
+### お問い合わせフォーム（Google フォーム）
+フォームの見た目はサイト側、送信先は Google フォームです。最初に一度だけ Google フォームを作り、`content.js` の `contact.form` に `action`（…/formResponse）と `fields` の entry 番号を書き写します。手順は「手順書/Merci-mille-fois_運用マニュアル.docx」の 3-8 を参照。`action` が空の間はフォームは表示されず、`"preview"` と書くと送信せずに見た目だけ確認できます。電話番号・メールアドレスは `tel` / `email` に入力した場合のみ表示されます（初期状態は非表示）。
+
 ## 2. 公開先：GitHub Pages（無料）で大丈夫です
 
 サーバー契約は不要。かかるのはお名前.com のドメイン更新料のみです。
@@ -69,10 +72,10 @@ GitHub Pages は無料プランで独自ドメイン・HTTPS 対応。同じ条�
 ## 3. 公開手順（GitHub Pages）
 
 ### 3-0. 先にお名前.com でドメイン更新
-期限が切れるとすべて止まります。お名前.com Navi →「ドメイン」→「更新」→ `merci-mille-fois.com` にチェック → クレジットカードで更新。
+期限が切れるとすべて止まります。お名前.com Navi →「ドメイン」→「更新」→ `merci-flower.net` にチェック → クレジットカードで更新。
 期限2週間前を切ると銀行振込・コンビニ払いは不可。ついでに「自動更新」をONに。
 
-> ショップ（BASE）の `shop.merci-mille-fois.com` も同じドメインです。切れるとショップも開けなくなります。
+> ショップ（BASE）の `shop.merci-flower.net` も同じドメインです。切れるとショップも開けなくなります。
 
 ### 3-1. GitHub にアップロード（15分）
 1. https://github.com でアカウント作成（無料）→ ログイン
@@ -86,12 +89,12 @@ GitHub Pages は無料プランで独自ドメイン・HTTPS 対応。同じ条�
 1. **Settings** → 左メニュー **Pages**
 2. Source：**Deploy from a branch** ／ Branch：**main** ／ **/ (root)** → **Save**
 3. 1〜2分後、`https://ユーザー名.github.io/merci-mille-fois/` で表示を確認
-4. **Custom domain** に `merci-mille-fois.com` → **Save**（CNAMEファイルを上げたので既に入っていることもあります）
+4. **Custom domain** に `merci-flower.net` → **Save**（CNAMEファイルを上げたので既に入っていることもあります）
 
 ### 3-3. お名前.com の DNS（10分、反映は数分〜24時間）
 お名前.com Navi →「ネットワーク」（または「DNS・サーバー」）→「DNS設定／転送設定」→ ドメインを選ぶ →「DNSレコード設定を利用する」→ 設定する
 
-**消すもの**：ホスト名が空欄（＝merci-mille-fois.com）や `www` の、古いサーバー向け A レコード／CNAME
+**消すもの**：ホスト名が空欄（＝merci-flower.net）や `www` の、古いサーバー向け A レコード／CNAME
 **残すもの**：ホスト名 `shop` の CNAME（BASE用。**絶対に消さない**）、MX／TXT（メール用）があればそれも
 
 **追加するもの**：
@@ -112,11 +115,11 @@ GitHub Pages は無料プランで独自ドメイン・HTTPS 対応。同じ条�
 
 ### 3-4. HTTPS
 DNS 反映後、GitHub の Settings → Pages で Custom domain に緑チェックが付いたら **Enforce HTTPS** をON（出るまで最大24時間）。
-`https://merci-mille-fois.com` で開けるようになります。
+`https://merci-flower.net` で開けるようになります。
 
 ---
 
 ## 4. 公開後にやっておくこと
-- Instagram のプロフィールのリンクを `https://merci-mille-fois.com` に変更
+- Instagram のプロフィールのリンクを `https://merci-flower.net` に変更
 - BASE（ショップ）の「ホームページへ」ボタンのリンク先も新アドレスに変更
 - 旧サイトのバックアップ「サイト情報」フォルダにはパスワードが平文で入っています。**GitHub には絶対に上げない**（上げるのは `merci-site` の中身だけ）
