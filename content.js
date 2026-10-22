@@ -47,8 +47,8 @@ window.SITE = {
   /* ---------- About ---------- */
   about: {
     text: [
-      "Merci mille fois は季節のお花を使って、よりお花を身近に感じていただき、お花と触れ合い楽しむ時間を大切にしています。",
-      "静かな音楽が流れるアトリエで、お飲み物とお菓子をご用意してお待ちしております。肩を張らずに、ちょっとお話ししながら、ゆったりとした時間をお過ごしください。"
+      "Merci mille fois は、季節のお花をもっと身近に感じていただきたいという思いから生まれた、お花のアトリエです。お花に触れ、楽しむ時間を、なによりも大切にしています。",
+      "静かな音楽の流れるアトリエで、お飲み物とお菓子をご用意してお待ちしています。レッスンでは肩の力を抜いて、おしゃべりを楽しみながらゆったりと。ご注文のお花は、お一人おひとりのご用途に合わせて、季節の花でお作りします。"
     ],
     hours:     "",      // 営業時間を載せる場合だけ入力（空なら項目ごと表示されません）
     hoursNote: "",
@@ -63,8 +63,8 @@ window.SITE = {
     sub:   "メルシーミルフォワ レッスン",
     intro: "月ごとにメニューをご用意しています。単発でも継続でも受講できます。年会費はありません。持ち物は花ハサミと花袋をお持ちください。",
     text: [
-      "花を通して季節を楽しむ Merci mille fois レッスン。肩を張らずに気軽な気持ちで、ちょっとお話ししながら、ゆったりとした時間を過ごしてほしい。それが Merci mille fois のお花教室です。",
-      "来てくださる方にほっとしていただける時間を過ごしていただきたいと願っています。静かな音楽が流れるお部屋で、お飲み物とお菓子をご用意してお待ちしております。"
+      "花を通して、季節のうつろいを楽しむ Merci mille fois のレッスン。難しく考えず、気軽な気持ちで。おしゃべりを交えながら、ゆったりとお花に向き合う時間をお届けします。",
+      "来てくださった方が、ほっとひと息つける場所でありたい。そんな願いを込めて、静かな音楽の流れるお部屋に、お飲み物とお菓子をご用意してお待ちしています。"
     ],
     /* 料金表（行を増やしても減らしてもOK） */
     fees: [
@@ -131,13 +131,13 @@ window.SITE = {
        ※ action に "preview" と書くと、送信はせずに見た目だけ確認できます
     --------------------------------------------------------------- */
     form: {
-      action:      "https://docs.google.com/forms/d/e/1FAIpQLSeUGiu2ikeVPfyHZaHOtalalV1DhsombUHxWvndq0uBHG0cHg/formResponse",
-      fallbackUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeUGiu2ikeVPfyHZaHOtalalV1DhsombUHxWvndq0uBHG0cHg/viewform",
+      action:      "https://docs.google.com/forms/d/e/1FAIpQLScuTmacGSSFAErikUKw6bcbam__X79FTliBnLE-6LtcKStLSQ/formResponse",
+      fallbackUrl: "https://docs.google.com/forms/d/e/1FAIpQLScuTmacGSSFAErikUKw6bcbam__X79FTliBnLE-6LtcKStLSQ/viewform",
       fields: {
-        name:    "entry.244898031",   // お名前
-        email:   "entry.241811064",   // メールアドレス
-        subject: "entry.328350451",   // ご用件（下の subjects から選択）
-        message: "entry.460894220"    // お問い合わせ内容
+        name:    "entry.1695512741",   // お名前
+        email:   "entry.1662297733",   // メールアドレス
+        subject: "entry.86902476",   // ご用件（下の subjects から選択）
+        message: "entry.190337080"    // お問い合わせ内容
       },
       subjects: ["レッスンについて", "お花のご注文について", "その他"],
       /* スパム防止の簡単な質問（不要なら question を "" に） */
