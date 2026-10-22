@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- ページのタイトルと説明文（検索結果に出る文章）。ここだけは index.html で編集します -->
 <title>Merci mille fois | 札幌・手稲のお花教室とオーダー専門花屋</title>
-<meta name="description" content="Merci mille fois（メルシーミルフォワ）は札幌市手稲区のお花教室・オーダー専門花屋。季節のお花を使って、お花をもっと身近に。花束・アレンジメント・ボックスフラワーのご注文はオンラインショップから。">
+<meta name="description" content="Merci mille fois（メルシーミルフォワ）は札幌市手稲区のお花教室・オーダー専門花屋。季節のお花を使ったフラワーレッスンは月1回・単発参加OK。花束・アレンジメント・ボックスフラワーのご注文は手稲区・西区に配達。">
 <link rel="canonical" href="https://merci-flower.net/">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Merci mille fois">
 <meta property="og:title" content="Merci mille fois | 札幌・手稲のお花教室とオーダー専門花屋">
 <meta property="og:description" content="季節のお花を使って、お花をもっと身近に。札幌市手稲区のお花教室とオーダー専門花屋。">
 <meta property="og:image" content="https://merci-flower.net/images/ogp.jpg">
@@ -22,13 +24,22 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Florist",
+  "@type": ["Florist", "LocalBusiness"],
   "name": "Merci mille fois",
-  "alternateName": "メルシーミルフォワ",
+  "alternateName": ["メルシーミルフォワ", "メルシー ミル フォワ"],
+  "description": "札幌市手稲区のお花教室とオーダー専門花屋。季節のお花を使ったフラワーレッスン（月1回・単発可）と、花束・アレンジメント・ボックスフラワーのご注文。配達は札幌市手稲区・西区。",
   "url": "https://merci-flower.net/",
   "image": "https://merci-flower.net/images/ogp.jpg",
+  "logo": "https://merci-flower.net/images/logo.png",
+  "telephone": "+81-90-6447-7673",
   "address": {"@type": "PostalAddress", "addressLocality": "札幌市手稲区", "addressRegion": "北海道", "addressCountry": "JP"},
-  "sameAs": ["https://www.instagram.com/merci.millefois/", "https://shop.merci-mille-fois.com/"]
+  "areaServed": [{"@type": "Place", "name": "札幌市手稲区"}, {"@type": "Place", "name": "札幌市西区"}],
+  "priceRange": "¥5,500〜",
+  "sameAs": ["https://www.instagram.com/merci.millefois/", "https://shop.merci-mille-fois.com/"],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "フラワーレッスン（お花教室）", "areaServed": "札幌市手稲区"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "花束・アレンジメント・ボックスフラワー"}, "url": "https://shop.merci-mille-fois.com/"}
+  ]
 }
 </script>
 <style>
