@@ -17,8 +17,8 @@ window.SITE = {
   /* ---------- 基本情報 ---------- */
   shopName:   "Merci mille fois",
   tagline:    "札幌・手稲　お花教室とオーダー専門花屋",   // ヘッダー下・フッターに出る一言
-  tel:        "090-6447-7673",
-  email:      "shalom.north@gmail.com",
+  tel:        "",      // サイトに電話番号を表示したい場合だけ入力（空なら表示されません）
+  email:      "",      // サイトにメールアドレスを表示したい場合だけ入力（空なら表示されません）
   instagram:  "https://www.instagram.com/merci.millefois/",
   shopUrl:    "https://shop.merci-mille-fois.com/",       // BASE のオンラインショップ
   shopLabel:  "オンラインショップ",                        // ボタンに出る文字
@@ -119,6 +119,30 @@ window.SITE = {
 
   /* ---------- Contact ---------- */
   contact: {
-    text: "レッスンのお申し込みやご質問は、Instagram のダイレクトメッセージからお気軽にご連絡ください。ご希望の日程をお知らせいただけるとスムーズです。"
+    text: "レッスンのお申し込みやご質問は、下のフォームまたは Instagram のダイレクトメッセージからお気軽にご連絡ください。ご希望の日程をお知らせいただけるとスムーズです。",
+    reply: "2〜3日以内にご返信いたします。返信が届かない場合は、迷惑メールフォルダをご確認ください。",
+
+    /* ---- お問い合わせフォーム（送信先は Google フォーム） ----
+       action : Google フォームの送信先URL（…/formResponse で終わるもの）
+       fields : 各項目の entry 番号（Google フォームの「事前入力したURL」から読み取る）
+       fallbackUrl : うまく送れないとき用に開く Google フォームの通常URL（forms.gle/…）
+       ※ action が空の間は、フォームは表示されず Instagram の案内だけになります
+       ※ action に "preview" と書くと、送信はせずに見た目だけ確認できます
+    --------------------------------------------------------------- */
+    form: {
+      action:      "https://docs.google.com/forms/d/e/1FAIpQLSeUGiu2ikeVPfyHZaHOtalalV1DhsombUHxWvndq0uBHG0cHg/formResponse",
+      fallbackUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeUGiu2ikeVPfyHZaHOtalalV1DhsombUHxWvndq0uBHG0cHg/viewform",
+      fields: {
+        name:    "entry.244898031",   // お名前
+        email:   "entry.241811064",   // メールアドレス
+        subject: "entry.328350451",   // ご用件（下の subjects から選択）
+        message: "entry.460894220"    // お問い合わせ内容
+      },
+      subjects: ["レッスンについて", "お花のご注文について", "その他"],
+      /* スパム防止の簡単な質問（不要なら question を "" に） */
+      challenge: { question: "スパム防止のため「はな」を漢字1文字で入力してください", answer: "花" },
+      sent: "送信しました。ありがとうございます。2〜3日以内にご返信いたします。",
+      error: "送信できませんでした。お手数ですが Instagram のメッセージからご連絡ください。"
+    }
   }
 };
